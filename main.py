@@ -33,8 +33,8 @@ CONFIG = {
     # 企业微信机器人的 webhook URL
     "WEWORK_WEBHOOK_URL": "",
     # Telegram 要填两个
-    "TELEGRAM_BOT_TOKEN": "",
-    "TELEGRAM_CHAT_ID": "",
+    "TELEGRAM_BOT_TOKEN": "7161997033:AAHXabgDHb6WQXLIh6ruXB6fBhGAGSl8sYg",
+    "TELEGRAM_CHAT_ID": "8116111645",
     # 用于让关注度更高的新闻在更前面显示，这里是权重排序配置，合起来是 1 就行
     "WEIGHT_CONFIG": {
         "RANK_WEIGHT": 0.6,  # 排名
@@ -2442,17 +2442,7 @@ class NewsAnalyzer:
         print(f"报告类型: {self.report_type}")
 
         ids = [
-            ("toutiao", "今日头条"),
-            ("baidu", "百度热搜"),
-            ("wallstreetcn-hot", "华尔街见闻"),
-            ("thepaper", "澎湃新闻"),
-            ("bilibili-hot-search", "bilibili 热搜"),
-            ("cls-hot", "财联社热门"),
-            ("ifeng", "凤凰网"),
-            "tieba",
             "weibo",
-            "douyin",
-            "zhihu",
         ]
 
         print(f"开始爬取数据，请求间隔 {self.request_interval} 毫秒")
